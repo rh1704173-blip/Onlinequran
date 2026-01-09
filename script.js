@@ -113,3 +113,13 @@ document.getElementById('whatsappForm').addEventListener('submit', function (e) 
 
   window.open(url, '_blank');
 });
+// Hamburger toggle
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('nav-links');
+
+hamburger.addEventListener('click', () => {
+  navLinks.classList.toggle('show');
+  hamburger.classList.toggle('active');
+});
+
+
