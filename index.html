@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Online Quran Academy</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- CSS -->
+<link rel="stylesheet" href="style.css">
+
+<link rel="icon" type="image/png" href="book.png">
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+   
+
+  <h1>Mehrunisa Academy</h1>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#courses">Courses</a>
+    <a href="#contact">Contact</a>
+ 
+
+  </nav>
+    <!-- Custom Language Selector -->
+<select id="languageSwitcher">
+  <option value="en">English</option>
+  <option value="ur">اردو</option>
+  <option value="ar">العربية</option>
+  <option value="hi">हिन्दी</option>
+  <option value="tr">Türkçe</option>
+  <option value="fr">Français</option>
+</select>
+
+<!-- Hidden Google Translate -->
+<div id="google_translate_element"></div>
+  
+</header>
+
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <h2>Learn Quran Online With Proper Tajweed</h2>
+  <p>Qualified Quran Teacher • Flexible Timings • Worldwide</p>
+  <a href="#contact" class="btn">Enroll Now</a>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <h2>About Mehrunisa</h2>
+  <p>
+    Experienced Quran teacher with years of online teaching experience.
+    Teaching children and adults with patience, care, and proper Tajweed.
+  </p>
+</section>
+<!-- STATS / COUNTERS -->
+<section class="stats" id="stats">
+  <div class="stat-box">
+    <h3 class="counter" data-target="900">0</h3>
+    <p>Happy Students</p>
+  </div>
+
+  <div class="stat-box">
+    <h3 class="counter" data-target="1200">0</h3>
+    <p>Students Enrolled</p>
+  </div>
+
+  <div class="stat-box">
+    <h3 class="counter" data-target="10">0</h3>
+    <p>Years of Experience</p>
+  </div>
+
+  <div class="stat-box">
+    <h3 class="counter" data-target="15">0</h3>
+    <p>Countries Reached</p>
+  </div>
+</section>
+
+<!-- COURSES -->
+<section class="courses" id="courses">
+  <h2>Our Courses</h2>
+  <div class="course-grid">
+    <div class="course">Noorani Qaida</div>
+    <div class="course">Quran Nazra</div>
+    <div class="course">Hifz Program</div>
+    <div class="course">Tajweed Course</div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="why" id="why">
+  <h2>Why Choose Us?</h2>
+  <ul>
+    <li>✔ Qualified Quran Teacher</li>
+    <li>✔ One-to-One Classes</li>
+    <li>✔ Flexible Timings</li>
+    <li>✔ Affordable Fees</li>
+  </ul>
+</section>
+<!-- TESTIMONIALS WITH PHOTOS -->
+<section class="testimonials" id="testimonials">
+  <h2>What Our Students Say</h2>
+
+  <div class="testimonial-slider">
+
+    <div class="testimonial active">
+      <img src="my pic.jpeg" alt="Student">
+      <p>
+        “My child’s Quran recitation has improved greatly. The teacher is very
+        patient and kind.”
+      </p>
+      <h4>Mayyari</h4>
+      <span>UK</span>
+    </div>
+
+    <div class="testimonial">
+      <img src="ali.jpg" alt="Student">
+      <p>
+        “Best online Quran classes with proper Tajweed and flexible timing.”
+      </p>
+      <h4>Muhammad Ali</h4>
+      <span>UAE</span>
+    </div>
+
+    <div class="testimonial">
+      <img src="girl.jpeg" alt="Student">
+      <p>
+        “Highly recommended for adults who want to learn Quran online.”
+      </p>
+      <h4>Fatima Noor</h4>
+      <span>Pakistan</span>
+    </div>
+
+  </div>
+
+  <div class="dots">
+    <span class="dot active"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <h2>Contact & Enrollment</h2>
+ <form id="whatsappForm">
+  <input type="text" id="name" placeholder="Your Name" required>
+  <input type="email" id="email" placeholder="Email Address" required>
+  <input type="tel" id="phone" placeholder="Phone / WhatsApp Number" required>
+  <textarea id="message" placeholder="Your Message"></textarea>
+  <button type="submit">Send via WhatsApp</button>
+</form>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Mehrunisa Academy. All Rights Reserved. Designed by <a href="https://rh1704173-blip.github.io/Mayyari/" style="list-style-type: none;">Mayyari</a></p>
+</footer>
+
+<!-- JS -->
+<script src="script.js"></script>
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<!-- WHATSAPP FLOATING BUTTON -->
+<a href="https://wa.me/923" 
+   class="whatsapp-float" 
+   target="_blank" 
+   aria-label="Chat on WhatsApp">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" 
+       alt="WhatsApp">
+</a>
+
+</body>
+</html>

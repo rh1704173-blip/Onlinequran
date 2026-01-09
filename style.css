@@ -1,0 +1,343 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #f9fdf9;
+  color: #333;
+}
+
+/* HEADER */
+header {
+  background: #1f7a4f;
+  color: #fff;
+  padding: 15px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav a {
+  color: #fff;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* HERO */
+.hero {
+  padding: 80px 20px;
+  text-align: center;
+  background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)),
+              url('quran.jpeg') center/cover;
+  color: #fff;
+}
+
+.hero .btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 30px;
+  background: #f1c40f;
+  color: #000;
+  text-decoration: none;
+  border-radius: 30px;
+}
+
+/* SECTIONS */
+section {
+  padding: 60px 80px;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #1f7a4f;
+}
+
+/* COURSES */
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap: 20px;
+}
+
+.course {
+  background: #e8f5ee;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* WHY */
+.why ul {
+  list-style: none;
+}
+
+.why li {
+  margin-bottom: 10px;
+}
+
+/* CONTACT SECTION */
+.contact {
+  background: #f9fdf9;
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.contact h2 {
+  color: #1f7a4f;
+  font-size: 36px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* FORM CONTAINER */
+.contact form {
+  background: #ffffff;
+  padding: 40px 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  max-width: 500px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* INPUTS & TEXTAREA */
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 14px 18px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  font-weight: 400;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+  border-color: #1f7a4f;
+  box-shadow: 0 0 10px rgba(31,122,79,0.3);
+}
+
+/* BUTTON */
+.contact button {
+  background: #25d366; /* WhatsApp green */
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 14px 0;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact button:hover {
+  background: #1ebe5b;
+  transform: translateY(-2px);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .contact {
+    padding: 60px 15px;
+  }
+
+  .contact h2 {
+    font-size: 28px;
+  }
+
+  .contact form {
+    padding: 30px 20px;
+  }
+}
+
+
+
+/* FOOTER */
+footer {
+  background: #1f7a4f;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+  section {
+    padding: 40px 20px;
+  }
+}
+/* Hide original Google Translate UI */
+#google_translate_element {
+  position: absolute;
+  left: -9999px;
+}
+
+/* Custom dropdown style */
+#languageSwitcher {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background: #fff;
+  font-size: 14px;
+  cursor: pointer;
+}
+/* TESTIMONIALS */
+.testimonials {
+  background: #f1f8f4;
+  text-align: center;
+  padding: 70px 20px;
+}
+
+.testimonials h2 {
+  margin-bottom: 40px;
+  color: #1f7a4f;
+}
+
+.testimonial-slider {
+  max-width: 700px;
+  margin: auto;
+  position: relative;
+}
+
+.testimonial {
+  display: none;
+  background: #fff;
+  padding: 35px 25px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.testimonial.active {
+  display: block;
+}
+
+.testimonial img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #1f7a4f;
+  margin-bottom: 15px;
+}
+
+.testimonial p {
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+.testimonial h4 {
+  color: #1f7a4f;
+  margin-bottom: 5px;
+}
+
+.testimonial span {
+  font-size: 14px;
+  color: #777;
+}
+
+/* DOTS */
+.dots {
+  margin-top: 25px;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  background: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 6px;
+  cursor: pointer;
+}
+
+.dot.active {
+  background: #1f7a4f;
+}
+/* STATS SECTION */
+.stats {
+  background: linear-gradient(135deg, #1f7a4f, #2e9f6b);
+  color: #fff;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap: 30px;
+  padding: 70px 50px;
+  text-align: center;
+}
+
+.stat-box h3 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.stat-box p {
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .stat-box h3 {
+    font-size: 32px;
+  }
+}
+/* WHATSAPP BUTTON */
+.whatsapp-float {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 55px;
+  height: 55px;
+  background: #25d366;
+  border-radius: 50%;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-float img {
+  width: 28px;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+
+/* MOBILE ADJUSTMENT */
+@media (max-width: 600px) {
+  .whatsapp-float {
+    width: 50px;
+    height: 50px;
+    bottom: 20px;
+    right: 20px;
+  }
+}
+.contact button {
+  background: #25d366;
+  color: #fff;
+  border: none;
+  padding: 14px;
+  width: 100%;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
